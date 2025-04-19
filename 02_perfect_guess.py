@@ -17,7 +17,7 @@ while(ch1 != 0):
     if (ch > 10):
         print("It's enough bro!")
         print(f"You took {ch} guesses!")
-        print("How could you be so bad to guesing")
+        print("How could you be so bad at guesing")
         print("I am deleting your windows 11")
         for i in range(10):  # Repeat 10 times
             for dots in ['.', '..', '...']:
