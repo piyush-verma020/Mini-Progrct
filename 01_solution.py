@@ -54,16 +54,18 @@ def game():
 
 
         print(f"Your current score: {score}")
-
-        if(score > hiscore):
+        with open('highscore.txt','r') as f:
+            r = f.readline()
+            sc = int(r)
+        if(score > sc):
             hiscore = score
-            with open("hiscore.txt", "w") as f:
+            with open("highscore.txt", "w") as f:
                 f.write(str(hiscore))
             print("New high score!")
 
     print("\n \n")
     print(f"Your final score was: {score}")
-    print(f"The highest score recorded: {hiscore}")
+    print(f"The highest score recorded: {sc}")
 
 print("Ready to play the game")
 game()
